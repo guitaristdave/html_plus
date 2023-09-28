@@ -1,0 +1,7 @@
+$desktopWidth: 1140px;
+$tabletWidth: 768px;
+$mobileWidth: 376px;
+$colorMainBack: #222;
+$colorMainSelected: #F16D7F;
+$thirdPart: calc((($desktopWidth - 60px) / 3) / $desktopWidth * 100%);
+$halfPart: calc((($tabletWidth - 30px) / 2) / $tabletWidth * 100%);
