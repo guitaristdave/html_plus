@@ -1,0 +1,5 @@
+$desktopWidth: 1140px;
+
+
+$colorMain: #9dbe87;
+$thirdPart: calc((($desktopWidth - 80px) / 3 / $desktopWidth) * 100%)

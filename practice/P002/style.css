@@ -1,0 +1,19 @@
+body {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.summary {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgb(44, 73, 63);
+}
+
+.summary:before {
+    content: "\2192";
+    margin-right: 5px;
+}
+
+.details[open] .summary::before {
+    content: "\2193";
+} 
