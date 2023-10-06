@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Cart</title>
+    <title>Registration</title>
 </head>
 <body>
     <header class="header">
@@ -35,51 +35,37 @@
         </div>
     </header>
     <div class="top center">
-        <h1 class="top__title">SHOPPING CART</h2>
+        <h1 class="top__title">REGISTRATION</h2>
     </div>
-    <section class="cart center">
-        <div class="cart-left">
-            <div class="cart__product">
-                <img src="img/cart1.jpg" alt="Card Pic">
-                <div class="cart__descr">
-                    <h4 class="cart__descr-title">MANGO PEOPLE<br>T-SHIRT</h4>
-                    <p class="cart__descr-text">Price: <span class="cart__descr-text--price">$300</span></p>
-                    <p class="cart__descr-text">Color: Red</p>
-                    <p class="cart__descr-text">Size: Xl</p>
-                    <p class="cart__descr-text">Quantity:  <input type="number" min="0" value="1"></p>
+    <section class="reg center">
+        <div class="reg-left">
+            <form action="#" class="reg-form">
+                <p class="reg-form__title">Your Name</p>
+                <input type="text" name="name" placeholder="First Name">
+                <input type="text" name="lastname" placeholder="Last Name">
+                <div class="reg-radios">
+                    <input type="radio" id="male" name="gender" value="male"> 
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"> 
+                    <label for="female">Female</label>
                 </div>
-            </div>
-            <div class="cart__product">
-                <img src="img/cart2.jpg" alt="Card Pic">
-                <div class="cart__descr">
-                    <h4 class="cart__descr-title">MANGO  PEOPLE  T-SHIRT</h4>
-                    <p class="cart__descr-text">Price: <span class="cart__descr-text--price">$300</span></p>
-                    <p class="cart__descr-text">Color: Red</p>
-                    <p class="cart__descr-text">Size: Xl</p>
-                    <p class="cart__descr-text">Quantity: <input type="number" min="0" value="1"></p>
-                </div>
-            </div>
-            <div class="cart__buttons">
-                <button class="cart__btn">CLEAR SHOPPING CART</button>
-                <button class="cart__btn">CONTINUE SHOPPING</button>
-            </div>
+                <p class="reg-form__title">Login details</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <p class="reg-form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <button class="reg-form__btn">JOIN NOW <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
         </div>
-        <div class="cart-right">
-            <div class="cart-order">
-                <h4 class="cart-order__title">SHIPPING ADRESS</h4>
-                <form action="#" class="cart-order__form">
-                    <input type="text" name="country" placeholder="Country">
-                    <input type="text" name="city" placeholder="State">
-                    <input type="number" placeholder="Postcode / Zip" >
-                    <button class="cart__btn cart__btn--order" type="submit">GET A QUOTE</button>
-                </form>
-            </div>
-            <div class="cart-total">
-                <p class="cart-total--subtotal">SUB TOTAL $900</p>
-                <p class="cart-total--total">GRAND TOTAL      <span>$900</span></p>
-                <div class="cart-total__line"></div>
-                <button class="cart__btn cart__btn--total">PROCEED TO CHECKOUT</button>
-            </div>
+        <div class="reg-right">
+            <h2 class="reg-right__title">LOYALTY HAS ITS PERKS</h2>
+            <p class="reg-right__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="reg-right__list">
+                <li class="reg-right__item"><i class="fa-solid fa-check"></i>15% off welcome offer</li>
+                <li class="reg-right__item"><i class="fa-solid fa-check"></i>Free shipping, returns and exchanges on all orders</li>
+                <li class="reg-right__item"><i class="fa-solid fa-check"></i>$10 off a purchase on your birthday</li>
+                <li class="reg-right__item"><i class="fa-solid fa-check"></i>Early access to products</li>
+                <li class="reg-right__item"><i class="fa-solid fa-check"></i>Early access to products</li>
+            </ul>
         </div>
     </section>
     <section class="subscribe">
@@ -152,5 +138,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/c1d0089191.js" crossorigin="anonymous"></script>
 </body>
 </html>

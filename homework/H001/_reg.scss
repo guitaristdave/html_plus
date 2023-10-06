@@ -1,0 +1,141 @@
+.reg {
+  display: flex;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  &-form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    gap: 20px;
+    &__title {
+      color: #222;
+      font-family: Lato;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    & input[type="text"],
+    & input[type="email"],
+    & input[type="password"] {
+      color: #b1b1b1;
+      font-family: Lato;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding: 15px 17px;
+      border: 1px solid #a4a4a4;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__radios {
+      display: flex;
+    }
+    &__text {
+      color: #b1b1b1;
+      font-family: Lato;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &__btn {
+      color: #fff;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background-color: $colorMainSelected;
+      border: none;
+      padding: 1rem 2rem;
+      width: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      transition: all 0.4s;
+      cursor: pointer;
+      &:hover {
+        background-color: #fff;
+        outline: 1px solid $colorMainSelected;
+        color: $colorMainSelected;
+      }
+      &:active {
+        background-color: $colorMainSelected;
+        color: #fff;
+      }
+    }
+  }
+  &-radios {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    & label {
+      color: #000;
+      font-family: Lato;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-right: 10px;
+    }
+    & input[type="radio"] {
+      display: none; /* Скрываем оригинальные радиокнопки */
+    }
+    & input[type="radio"] + label {
+      position: relative;
+      padding-left: 25px; /* Отступ слева для маркера */
+      cursor: pointer;
+    }
+    & input[type="radio"] + label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px; /* Размер маркера */
+      height: 16px; /* Размер маркера */
+      border: 1px solid $colorMainSelected; /* Цвет маркера (розовый) */
+      border-radius: 50%; /* Сделаем маркер круглым */
+    }
+    & input[type="radio"]:checked + label:before {
+      background-color: $colorMainSelected; /* Заполняем маркер при выборе */
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    &__title {
+      color: #000;
+      font-family: Lato;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &__text,
+    &__list {
+      color: #000;
+      font-family: Lato;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &__list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__item {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+  }
+}

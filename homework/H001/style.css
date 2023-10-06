@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -738,6 +739,145 @@ summary {
 .cart-total__line {
   border-bottom: 1px solid #e2e2e2;
   margin-bottom: 17px;
+}
+
+.reg {
+  display: flex;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 20px;
+}
+.reg-form__title {
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.reg-form input[type=text], .reg-form input[type=email], .reg-form input[type=password] {
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 15px 17px;
+  border: 1px solid #a4a4a4;
+}
+.reg-form input[type=text]:focus, .reg-form input[type=email]:focus, .reg-form input[type=password]:focus {
+  outline: none;
+}
+.reg-form__radios {
+  display: flex;
+}
+.reg-form__text {
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.reg-form__btn {
+  color: #fff;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #F16D7F;
+  border: none;
+  padding: 1rem 2rem;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.reg-form__btn:hover {
+  background-color: #fff;
+  outline: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+.reg-form__btn:active {
+  background-color: #F16D7F;
+  color: #fff;
+}
+.reg-radios {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.reg-radios label {
+  color: #000;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-right: 10px;
+}
+.reg-radios input[type=radio] {
+  display: none; /* Скрываем оригинальные радиокнопки */
+}
+.reg-radios input[type=radio] + label {
+  position: relative;
+  padding-left: 25px; /* Отступ слева для маркера */
+  cursor: pointer;
+}
+.reg-radios input[type=radio] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Размер маркера */
+  height: 16px; /* Размер маркера */
+  border: 1px solid #F16D7F; /* Цвет маркера (розовый) */
+  border-radius: 50%; /* Сделаем маркер круглым */
+}
+.reg-radios input[type=radio]:checked + label:before {
+  background-color: #F16D7F; /* Заполняем маркер при выборе */
+}
+.reg-right {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.reg-right__title {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.reg-right__text, .reg-right__list {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.reg-right__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reg-right__item {
+  display: flex;
+  gap: 22px;
+  align-items: center;
 }
 
 * {
