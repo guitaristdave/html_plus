@@ -139,3 +139,14 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .center {
+    padding: 0 2%;
+  }
+
+  .reg {
+    flex-direction: column;
+    align-items: center;
+  }
+}

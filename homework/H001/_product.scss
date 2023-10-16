@@ -19,25 +19,30 @@ a {
   background-color: $colorMainBack;
   padding-top: 20px;
   padding-bottom: 20px;
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &-left {
     display: flex;
     align-items: center;
     gap: 30px;
   }
+
   &-right {
     display: flex;
     align-items: center;
     gap: 33px;
   }
+
   &__icon:hover {
     fill: $colorMainSelected;
     cursor: pointer;
   }
+
   &__icon:active {
     fill: gray;
   }
@@ -47,11 +52,13 @@ a {
   background-color: #f8f3f4;
   padding-top: 60px;
   padding-bottom: 60px;
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__title {
     color: #f16d7f;
     font-family: Lato;
@@ -60,6 +67,7 @@ a {
     font-weight: 400;
     line-height: normal;
   }
+
   &__breadcrumb {
     color: #636363;
     font-family: Lato;
@@ -68,12 +76,15 @@ a {
     font-weight: 300;
     line-height: normal;
     transition: color 0.4s;
+
     &:hover {
       color: $colorMainSelected;
     }
+
     &:active {
       color: #636363;
     }
+
     &:last-child {
       color: $colorMainSelected;
       font-family: Lato;
@@ -81,9 +92,11 @@ a {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+
       &:hover {
         color: #636363;
       }
+
       &:active {
         color: $colorMainSelected;
       }
@@ -98,10 +111,12 @@ a {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 40px;
+
   &__icon {
     fill: #000;
     transition: fill 0.4s;
   }
+
   &__arrow {
     display: flex;
     align-items: center;
@@ -109,19 +124,22 @@ a {
     width: 47px;
     height: 47px;
     background-color: rgba(42, 42, 42, 0.15);
+
     &:hover {
       cursor: pointer;
-        .catalog-main__icon {
-          fill: $colorMainSelected;
-        }
+
+      .catalog-main__icon {
+        fill: $colorMainSelected;
       }
+    }
+
     &:active {
       .catalog-main__icon {
         fill: #222;
       }
     }
-    }
   }
+}
 
 
 
@@ -130,6 +148,7 @@ a {
   height: 665px;
   display: flex;
   justify-content: center;
+
   &__content {
     max-width: $desktopWidth;
     height: 600px;
@@ -143,6 +162,7 @@ a {
     padding-top: 65px;
     padding-bottom: 65px;
   }
+
   &__title {
     color: #f16d7f;
     font-family: Lato;
@@ -154,6 +174,7 @@ a {
     border-bottom: 3px solid $colorMainSelected;
     margin-bottom: 12px;
   }
+
   &__subtitle {
     color: #4d4d4d;
     font-family: Lato;
@@ -163,6 +184,7 @@ a {
     line-height: normal;
     margin-bottom: 48px;
   }
+
   &__text {
     color: #5e5e5e;
     text-align: center;
@@ -174,6 +196,7 @@ a {
     width: 555px;
     margin-bottom: 32px;
   }
+
   &__price {
     color: #ef5b70;
     font-family: Lato;
@@ -182,17 +205,18 @@ a {
     font-weight: 300;
     line-height: normal;
     width: 640px;
-    text-align: center; 
+    text-align: center;
     padding-bottom: 65px;
     border-bottom: 1px solid #EAEAEA;
     margin-bottom: 65px;
   }
-  
+
   &__filters {
     display: flex;
     gap: 24px;
     margin-bottom: 48px;
   }
+
   &__filter {
     display: flex;
     color: #6f6e6e;
@@ -202,6 +226,7 @@ a {
     font-weight: 400;
     line-height: normal;
   }
+
   &__button {
     width: 212px;
     border: 1px solid $colorMainSelected;
@@ -218,38 +243,44 @@ a {
     font-weight: 400;
     line-height: normal;
     transition: background-color 0.4s, color 0.4s;
+
     &:hover {
-        background-color: $colorMainSelected;
-        color: #fff;
-        .cart {
-            transition: fill 0.4s;
-            fill: #fff;
-        }
+      background-color: $colorMainSelected;
+      color: #fff;
+
+      .cart {
+        transition: fill 0.4s;
+        fill: #fff;
+      }
     }
+
     &:active {
-        background-color: #fff;
-        color: $colorMainSelected;
-        .cart {
-            transition: fill 0.4s;
-            fill: $colorMainSelected;
-        }
+      background-color: #fff;
+      color: $colorMainSelected;
+
+      .cart {
+        transition: fill 0.4s;
+        fill: $colorMainSelected;
+      }
     }
   }
 }
 
 .examples {
   padding-bottom: 98px;
+
   &__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
   &__item {
     max-width: $thirdPart;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+
     &__name {
       display: block;
       color: #000;
@@ -260,13 +291,16 @@ a {
       line-height: normal;
       margin-bottom: 12px;
       transition: color 0.4s;
+
       &:hover {
         color: $colorMainSelected;
       }
+
       &:active {
         color: inherit;
       }
     }
+
     &__text {
       color: #5d5d5d;
       font-family: Lato;
@@ -276,6 +310,7 @@ a {
       line-height: normal;
       margin-bottom: 16px;
     }
+
     &__price {
       color: #f16d7f;
       font-family: Lato;
@@ -285,6 +320,7 @@ a {
       line-height: normal;
     }
   }
+
   &__item__descr {
     background-color: #f8f8f8;
     padding: 24px 16px;
@@ -294,11 +330,13 @@ a {
 .subscribe {
   position: relative;
   height: 448px;
+
   &__pic {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -307,6 +345,7 @@ a {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
   }
+
   &__content {
     display: flex;
     align-items: center;
@@ -317,6 +356,7 @@ a {
     top: 0;
     left: 0;
   }
+
   &-left {
     display: flex;
     align-items: center;
@@ -324,10 +364,12 @@ a {
     flex-direction: column;
     max-width: 360px;
     gap: 30px;
+
     & img {
       border-radius: 50%;
     }
   }
+
   &-right {
     display: flex;
     flex-direction: column;
@@ -335,6 +377,7 @@ a {
     align-items: center;
     gap: 30px;
   }
+
   &__text {
     text-align: center;
     color: #222224;
@@ -353,8 +396,10 @@ a {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 167.2%; /* 40.128px */
+    line-height: 167.2%;
+    /* 40.128px */
   }
+
   &__subtitle {
     color: #222224;
     font-family: Lato;
@@ -363,9 +408,11 @@ a {
     font-weight: 400;
     line-height: 167.2%;
   }
+
   &__form {
     display: flex;
   }
+
   &__email {
     padding: 1rem 5rem 1rem 2rem;
     color: #222224;
@@ -376,10 +423,12 @@ a {
     line-height: normal;
     border: none;
     border-radius: 25px 0 0 25px;
+
     &:focus {
       outline: none;
     }
   }
+
   &__button {
     color: #fff;
     text-align: center;
@@ -393,10 +442,12 @@ a {
     border-radius: 0 25px 25px 0;
     padding: 1rem;
     transition: background-color 0.4s;
+
     &:hover {
       background-color: #a54754;
       cursor: pointer;
     }
+
     &:active {
       background-color: $colorMainSelected;
     }
@@ -407,11 +458,13 @@ a {
   background-color: $colorMainBack;
   padding-top: 24px;
   padding-bottom: 24px;
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__text {
     color: #fbfbfb;
     font-family: Lato;
@@ -420,10 +473,12 @@ a {
     font-weight: 400;
     line-height: normal;
   }
+
   &-right {
     display: flex;
     gap: 8px;
   }
+
   &__icon {
     display: flex;
     justify-content: center;
@@ -432,11 +487,33 @@ a {
     height: 32px;
     background-color: #fff;
     transition: background-color 0.4s;
+
     &:hover {
       background-color: $colorMainSelected;
     }
+
     &:active {
       background-color: #fff;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .center {
+    padding: 0 2%;
+  }
+
+  .catalog {
+    &-main__photo img {
+      width: 80%;
+    }
+  }
+
+  .examples {
+    flex-wrap: wrap;
+    &__item {
+      max-width: 96%;
     }
   }
 }
